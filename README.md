@@ -1,6 +1,6 @@
 # Exploratory Data Analytics of Movie Datasets
 
-![Image](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Image.jpeg)
+![Image](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Images/movie_image.jpeg)
 
 ## Project Overview
 
@@ -25,7 +25,7 @@ In the folder `Data` are movie datasets from:
 
 Because it was collected from various locations, the different files have different formats. Some are compressed CSV (comma-separated values) or TSV (tab-separated values) files that can be opened using spreadsheet software or `pd.read_csv`, while the data from IMDB is located in a SQLite database.
 
-![movie data erd](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/movie_data_erd.jpeg)
+![movie data erd](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Images/movie_data_erd.jpeg)
 
 The above diagram shows ONLY the IMDB data.
 
@@ -41,8 +41,8 @@ I decide to use the folowing data files:
 
 Below are links to this project's Jupyter Notebook and the presentation
 
-- ![notebook](link)
-- ![presentation](link)
+- [notebook](https://github.com/waihiga9/Phase1_Project/blob/main/EDA_movies.ipynb?view=true)
+- [presentation](https://github.com/waihiga9/Phase1_Project/blob/main/presentation.pdf?view=true)
   
 #### 1. What are top-rated popular genres?
 
@@ -50,15 +50,15 @@ Here, I considered 2 factors to generate insightful analysis on the genres.
 
 - Number of movies produced per genre
   
-  ![genre_frequency](link)
+  ![genre_frequency](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/genre_frequncy.png)
 
 - Average number of votes per Genre
   
-  ![votes_per_genre](link)
+  ![votes_per_genre](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/votes_per_genre.png)
 
-- **Average rate per Genre for genres with more than 4000 movies and 3000 average votes**
+**Average rate per Genre for genres with more than 4000 movies and 3000 average votes**
   
-  ![average_rate](link)
+  ![average_rate](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/average_rate.png)
 
 Top-rated movie genres (above a rating of 6) with movies above 3000 and number of votes about 3000 are **Biography, Drama, Adventure, Romance, Crime and Comedy**. This could suggest that these genres are popular among movie audience and have a higher likelihood of being positively received by market.
 
@@ -66,7 +66,7 @@ Top-rated movie genres (above a rating of 6) with movies above 3000 and number o
 
 Examine if the movies with the highest budget generate the highest revenue.
 
-  ![budget_gross](link)
+  ![budget_gross](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/budget_gross.png)
 
 The above correlation coefficients and the scatter plot indicate a ***moderately strong positive correlation*** between the production budget and both measures of gross.  This analysis argues that **movies with a higher production budget tend to earn more gross income.**
 
@@ -74,7 +74,7 @@ The above correlation coefficients and the scatter plot indicate a ***moderately
 
 Time series graph of the yearly budget.
 
-  ![production_budget](link)
+  ![production_budget](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/production_budget.png)
 
 There is an **increasing trend of production budgets** in the film industry.
 
@@ -82,13 +82,13 @@ There is an **increasing trend of production budgets** in the film industry.
 
 Time series graph of the monthly gross
 
-  ![gross](link)
+  ![gross](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/gross.png)
 
 It appears that the gross income for movies tends to be **higher during the mid months of the year**, which could correspond to the **summer period of the northern hemisphere**.
 
 #### 5. What is the difference between Domestic Gross and Worldwide Gross?
 
-  ![diff_gross](link)
+  ![diff_gross](https://raw.githubusercontent.com/waihiga9/Phase1_Project/main/Plots/diff_gross.png)
 
 It is evident that **movies performed well in a global market**. This could indicate that the most movies had a broad appeal that could be successful in multiple regions.
 
